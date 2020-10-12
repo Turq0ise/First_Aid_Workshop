@@ -30,8 +30,8 @@
 
 .section-one {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 2, 2, 0.78))), url("/Images/First Aid Background.jpg");
-  background: linear-gradient(rgba(2, 2, 2, 0.78)), url("/Images/First Aid Background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 2, 2, 0.78))), url("../Images/FirstAidBackground.jpg");
+  background: linear-gradient(rgba(2, 2, 2, 0.78)), url("../Images/FirstAidBackground.jpg");
   background-size: cover;
   color: #fff;
 }
