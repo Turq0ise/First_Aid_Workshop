@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .nav-bar {
@@ -92,14 +93,17 @@
         padding: 30px;
         border-radius: 10px;
         margin-top: 3.5vh;
+        position: relative;
     }
     .join-form {
         display: flex;
+        position: relative;
     }
     .input-form {
         display: flex;
         flex-direction: column;
         color: #fff;
+        position: relative;
         input {
             padding: 18px 50px;
             margin: 10px 0;
