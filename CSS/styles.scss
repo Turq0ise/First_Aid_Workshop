@@ -38,11 +38,34 @@
         left: 50%;
         transform: translate(-50%, -50%);
         h1 {
+            margin-bottom: 1.8vh;
+            font-size: clamp(40px, 5vw, 83px);
+            font-weight: 600;
+            padding: 0vh 20vw;
             span {
                 color: #FF4842;
             }
         }
-    }  
+        p {
+            font-size: clamp(18px, 5vw, 35px);
+            margin-bottom: 8vh;
+        }
+        .learn-more-btn {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 13px;
+            background-color: #FF4842;
+        }
+    }
+}
+
+.arrow-down {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -98%);
+    height: 30px;
 }
 
 .section-two {

@@ -45,8 +45,37 @@
           transform: translate(-50%, -50%);
 }
 
+.section-one .main-elements h1 {
+  margin-bottom: 1.8vh;
+  font-size: clamp(40px, 5vw, 83px);
+  font-weight: 600;
+  padding: 0vh 20vw;
+}
+
 .section-one .main-elements h1 span {
   color: #FF4842;
+}
+
+.section-one .main-elements p {
+  font-size: clamp(18px, 5vw, 35px);
+  margin-bottom: 8vh;
+}
+
+.section-one .main-elements .learn-more-btn {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 13px;
+  background-color: #FF4842;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -98%);
+          transform: translate(-50%, -98%);
+  height: 30px;
 }
 
 .section-two {
