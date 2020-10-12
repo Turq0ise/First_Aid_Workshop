@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar {
+    background-color: rgba(2, 2, 2, .3);
+    list-style: none;
+    margin:0;
+    padding: 0;
+    text-align:center;
+    height: 7.5vh;
+    position: fixed;
+    width: 100%;
+    li {
+        display: inline;
+    }
+    a {
+        display: inline-block;
+        padding: 1.5vh 4.5vw;
+        text-decoration: none;
+        color: #fff;
+        font-size: 27px;
+        font-size: clamp(18px, 5vw, 27px);
+        font-weight: 450;
+    }
+}
+
+.section-one {
+    height: 100vh;
+    background: linear-gradient(rgba(2, 2, 2, 0.78)), url("/Images/First Aid Background.jpg");
+    background-size: cover;
+    color: #fff;
+    .main-elements {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1 {
+            span {
+                color: #FF4842;
+            }
+        }
+    }  
+}
+
+.section-two {
+    height: 100vh;
+    background: #232323;
+    color: #fff;
+    .main-elements {
+        text-align: center;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translate(-50%, -150%);
+        h1 {
+            span {
+                color: #FF4842;
+            }
+        }
+    }  
+}
