@@ -51,6 +51,7 @@ html, body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 2, 2, 0.78))), url("../Images/FirstAidBackground.jpg");
   background: linear-gradient(rgba(2, 2, 2, 0.78)), url("../Images/FirstAidBackground.jpg");
   background-size: cover;
+  background-position: 70% 50%;
   color: #fff;
 }
 
@@ -62,13 +63,13 @@ html, body {
 
 .section-one .main-elements h1 {
   margin-bottom: 0.75em;
-  font-size: clamp(40px, 5vw, 83px);
+  font-size: clamp(36px, 5vw, 83px);
   font-weight: 600;
   padding: 0 1em;
 }
 
 .section-one .main-elements p {
-  font-size: clamp(18px, 5vw, 35px);
+  font-size: clamp(15px, 5vw, 30px);
   padding: 0 1em;
   margin-bottom: 2.5em;
 }
@@ -83,6 +84,11 @@ html, body {
   padding: 0.8em;
   border-radius: 10px;
   background-color: #FF4842;
+}
+
+.section-one .main-elements .learn-more-btn:hover {
+  background-color: #cc3a35;
+  border: 2px solid rgba(2, 2, 2, 0.3);
 }
 
 .arrow-down {
@@ -104,6 +110,7 @@ html, body {
 
 .section-two .main-elements {
   text-align: center;
+  margin: 0 1em;
 }
 
 .section-two .main-elements span {
@@ -111,7 +118,12 @@ html, body {
 }
 
 .section-two .main-elements h1 {
-  font-size: 40px;
+  font-size: clamp(36px, 5vw, 83px);
+}
+
+.section-two .main-elements h2 {
+  font-weight: 200;
+  font-size: 1.25em;
 }
 
 .section-two .join-form {
@@ -182,16 +194,52 @@ html, body {
 
 .section-two .join-form .input-form button {
   color: white;
+  font-weight: 500;
   margin: 10px 0;
   padding: 1.3em;
   border-radius: 10px;
-  background-color: rgba(2, 2, 2, 0.3);
+  background-color: rgba(2, 2, 2, 0.5);
   border: 2px solid transparent;
   cursor: pointer;
 }
 
+.section-two .join-form .input-form button:hover {
+  background-color: rgba(2, 2, 2, 0.2);
+  border: 2px solid rgba(2, 2, 2, 0.3);
+}
+
+@media (min-width: 975px) {
+  .section-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-two .main-elements {
+    text-align: start;
+    margin-top: 4em;
+    margin-left: 5em;
+    margin-right: 40em;
+  }
+  .section-two .main-elements h1 {
+    margin-bottom: .5em;
+  }
+  .section-two .main-elements h2 {
+    font-weight: 200;
+    font-size: 1.9em;
+  }
+  .section-two .main-elements p {
+    font-size: 1.1em;
+  }
+  .section-two .join-form {
+    left: 100%;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    margin-left: -5em;
+  }
+}
+
 .section-three {
-  height: 100%;
+  margin-top: 13em;
   background: #232323;
   color: #fff;
   position: relative;
@@ -210,13 +258,13 @@ html, body {
 }
 
 .section-three .main-elements h1 {
-  font-size: 30px;
+  font-size: clamp(36px, 5vw, 83px);
 }
 
 .section-three .main-elements h2 {
   font-weight: 200;
-  margin-top: 2em;
-  font-size: 20px;
+  margin: 2em;
+  font-size: 1.25em;
 }
 
 .section-three .main-elements h2 span {
@@ -230,16 +278,19 @@ html, body {
 }
 
 .section-three .main-elements .person-card h1 {
+  font-size: 2em;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .section-three .main-elements .person-card p {
   margin-top: 0.5em;
+  font-size: 1em;
 }
 
 .section-three .main-elements .person-card img {
   height: 150px;
   width: 150px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
