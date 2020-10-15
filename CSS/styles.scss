@@ -6,6 +6,7 @@ html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-color: #232323;
+    color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +50,6 @@ html, body {
     background: linear-gradient(rgba(2, 2, 2, 0.78)), url("../Images/FirstAidBackground.jpg");
     background-size: cover;
     background-position: 70% 50%;
-    color: #fff;
     .main-elements {
         text-align: center;
         vertical-align: middle;
@@ -94,7 +94,6 @@ html, body {
     padding: 4em 0;
     background: #232323;
     height: 100vh;
-    color: #fff;
     position: relative;
     .main-elements {
         text-align: center;
@@ -123,7 +122,6 @@ html, body {
         .input-form {
             display: flex;
             flex-direction: column;
-            color: #fff;
             padding: .2em;
             input {
                 padding: 1.3em 8em;
@@ -161,6 +159,186 @@ html, body {
     }
 }
 
+.section-three {
+    background: #232323;
+    height: auto;
+    width: 100%;
+    .main-elements {
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        span {
+            color: #FF4842;
+        }
+        h1 {
+            font-size: clamp(36px, 5vw, 83px);
+        }
+        h2 {
+            font-weight: 200;
+            font-size: 1.25em;
+            span {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        .group-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(10rem, 3fr));
+            .person-card {
+                width: auto;
+                h1 {
+                    font-size: 2em;
+                    margin: 0 auto;
+                }
+                p {
+                    margin-top: 0.5em;
+                    font-size: 1em;
+                }
+                img {
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }  
+}
+
+//This is for the Proposal Page
+
+.section-four {
+    height: 100vh;
+    background: linear-gradient(rgba(2, 2, 2, 0.78)), url("../Images/FirstAidBackground.jpg");
+    background-size: cover;
+    background-position: 70% 50%;
+    .main-elements {
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 13em;
+        h1 {
+            font-size: clamp(36px, 5vw, 83px);
+            font-weight: 600;
+        }
+        span {
+            color: #FF4842;
+        }
+    }
+}
+
+.section-five {
+    padding: 4em 0;
+    background: #232323;
+    height: auto;
+    position: relative;
+    .main-elements {
+        text-align: center;
+        margin: 0 1em;
+        span {
+            color: #FF4842;
+        }
+        h1 {
+            font-size: clamp(36px, 5vw, 83px);
+        }
+        h2 {
+            font-weight: 200;
+            font-size: 1.25em;
+        }
+    }
+}
+
+.section-six {
+    height: auto;   
+    margin: 0 1em;
+    .main-elements {
+        text-align: center;
+        span {
+            color: #FF4842;
+        }
+        h1 {
+            font-size: clamp(36px, 5vw, 83px);
+        }
+        p {
+            margin: 3em 0;
+        }
+    }
+}
+
+.section-seven {
+    padding: 4em 0;
+    background: #232323;
+    height: auto;
+    position: relative;
+    .main-elements {
+        text-align: center;
+        margin: 0 1em;
+        span {
+            color: #FF4842;
+        }
+        h1 {
+            font-size: clamp(36px, 5vw, 83px);
+        }
+        h2 {
+            font-weight: 200;
+            font-size: 1.25em;
+        }
+    }
+}
+
+.section-eight {
+    height: auto;
+    margin: 0 1em;
+    .main-elements {
+        text-align: center;
+        span {
+            color: #FF4842;
+        }
+        h1 {
+            font-size: clamp(36px, 5vw, 83px);
+        }
+        p {
+            margin: 3em 0;
+            text-align: start;
+        }
+    }  
+}
+
+.section-nine {
+    height: 65vh;
+    .main-elements {
+        text-align: center;
+        padding-top: 10em;
+        h1 {
+            margin-bottom: 1.25em;
+            font-size: clamp(36px, 5vw, 83px);
+            font-weight: 600;
+            padding: 0 1em;
+        }
+        span {
+            color: #FF4842;
+        }
+        .learn-more-btn {
+            text-decoration: none;
+            color: white;
+            padding: 0.8em;
+            border-radius: 10px;
+            background-color: #FF4842;
+        }
+        .learn-more-btn:hover {
+            background-color: #cc3a35;
+            border: 2px solid rgba(2, 2, 2, .3);
+        }
+    }
+}
+
+//This is for the outline page
+
+.separate-elements {
+    margin: 16em 0;
+}
+
+// All @media queries down here
+
 @media(min-width: 975px) {
     .section-two {
         display: flex;
@@ -186,50 +364,70 @@ html, body {
             margin-left: -5em;
         }
     }
-}
-
-.section-three {
-    margin-top: 13em;
-    background: #232323;
-    color: #fff;
-    position: relative;
-    .main-elements {
-        text-align: center;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        span {
-            color: #FF4842;
-        }
-        h1 {
-            font-size: clamp(36px, 5vw, 83px);
-        }
-        h2 {
-            font-weight: 200;
-            margin: 2em;
-            font-size: 1.25em;
-            span {
-                text-transform: uppercase;
-                font-weight: 700;
-            }
-        }
-        .person-card {
-            margin-top: 3em;
-            margin-bottom: 5em;
+    .section-five {
+        display: flex;
+        height: 95vh;
+        .main-elements {
+            text-align: start;
+            margin-top: 4em;
+            margin-left:5em;
+            margin-right: 40em;
             h1 {
-                font-size: 2em;
-                margin-top: 0;
-                margin-bottom: 0;
+                margin-bottom: .5em;
+            }
+            h2 {
+                font-weight: 200;
+                font-size: 1.9em;
             }
             p {
-                margin-top: 0.5em;
-                font-size: 1em;
-            }
-            img {
-                height: 150px;
-                width: 150px;
-                border-radius: 10px;
+                font-size: 1.1em;
             }
         }
-    }  
+        .join-form {
+            left: 100%;
+            transform: translate(-100%);
+            margin-left: -5em;
+        }
+    }
+
+    .section-six {
+        display: flex;
+        .main-elements {
+            margin: 0 8em;
+        }
+        .separate-elements {
+            margin: 18.5em 0;
+        }
+    }
+
+    .section-seven {
+        display: flex;
+        .main-elements {
+            text-align: end;
+            margin-top: 4em;
+            margin-left: 40em;
+            margin-right: 5em;
+            h1 {
+                margin-bottom: .5em;
+            }
+            h2 {
+                font-weight: 200;
+                font-size: 1.9em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    .section-eight {
+        display: flex;
+        .main-elements {
+            margin: 0 3.5em;
+            li {
+                line-height: 1%;
+            }
+        }
+    }
+
 }
