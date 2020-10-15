@@ -22,7 +22,6 @@ html, body {
 }
 
 .nav-bar {
-  background-color: rgba(2, 2, 2, 0.3);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -33,18 +32,67 @@ html, body {
   z-index: 99;
 }
 
-.nav-bar li {
-  display: inline;
+.nav-bar label {
+  font-size: 26px;
+  display: block;
+  cursor: pointer;
+  background-color: rgba(2, 2, 2, 0.3);
 }
 
-.nav-bar a {
+.nav-bar #toggle {
+  display: none;
+}
+
+.nav-bar .nav-items {
+  background-color: rgba(2, 2, 2, 0.4);
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+.nav-bar .nav-items .nav-item a {
   display: inline-block;
-  padding: 1.5vh 4.5vw;
+  padding: 1vh 0.5em;
   text-decoration: none;
   color: #fff;
-  font-size: 27px;
   font-size: clamp(18px, 5vw, 27px);
   font-weight: 450;
+}
+
+.nav-bar .nav-items .nav-item label {
+  display: inline-block;
+}
+
+.nav-bar .nav-items .nav-item img {
+  height: 15px;
+}
+
+.nav-bar .nav-items .nav-item .nav-items-two {
+  display: none;
+}
+
+.nav-bar .nav-items .nav-item #toggle-two {
+  display: none;
+}
+
+.nav-bar .nav-items .nav-item #toggle-two:checked + .nav-items-two {
+  display: block;
+}
+
+.nav-bar .nav-items .nav-item .nav-items-three {
+  display: none;
+}
+
+.nav-bar .nav-items .nav-item #toggle-three {
+  display: none;
+}
+
+.nav-bar .nav-items .nav-item #toggle-three:checked + .nav-items-three {
+  display: block;
+}
+
+.nav-bar #toggle:checked + .nav-items {
+  display: block;
 }
 
 .section-one {
@@ -238,15 +286,8 @@ html, body {
   font-weight: 700;
 }
 
-.section-three .main-elements .group-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(10rem, 3fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(10rem, 3fr));
-}
-
 .section-three .main-elements .group-cards .person-card {
-  width: auto;
+  margin: 5em 0;
 }
 
 .section-three .main-elements .group-cards .person-card h1 {
@@ -293,6 +334,9 @@ html, body {
   background: #232323;
   height: auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section-five .main-elements {

@@ -22,7 +22,6 @@ html, body {
 }
 
 .nav-bar {
-    background-color: rgba(2, 2, 2, .3);
     list-style: none;
     margin:0;
     padding: 0;
@@ -31,17 +30,57 @@ html, body {
     position: fixed;
     width: 100%;
     z-index: 99;
-    li {
-        display: inline;
+    label {
+        font-size: 26px;
+        display: block;
+        cursor: pointer;
+        background-color: rgba(2, 2, 2, .3);
     }
-    a {
-        display: inline-block;
-        padding: 1.5vh 4.5vw;
-        text-decoration: none;
-        color: #fff;
-        font-size: 27px;
-        font-size: clamp(18px, 5vw, 27px);
-        font-weight: 450;
+    #toggle {
+        display: none;
+    }
+    .nav-items {
+        background-color: rgba(2, 2, 2, .4);
+        text-align: center;
+        width: 100%;
+        display: none;
+        .nav-item {
+            a {
+                display: inline-block;
+                padding: 1vh 0.5em;
+                text-decoration: none;
+                color: #fff;
+                font-size: clamp(18px, 5vw, 27px);
+                font-weight: 450;
+            }
+            label {
+                display: inline-block;
+            }
+            img {
+                height: 15px;
+            }
+            .nav-items-two {
+                display: none;
+            }
+            #toggle-two {
+                display: none;
+            }
+            #toggle-two:checked + .nav-items-two {      
+                display: block;
+            }
+            .nav-items-three {
+                display: none;
+            }
+            #toggle-three {
+                display: none;
+            }
+            #toggle-three:checked + .nav-items-three {      
+                display: block;
+            }
+        }
+    }
+    #toggle:checked + .nav-items {
+        display: block;
     }
 }
 
@@ -183,10 +222,8 @@ html, body {
             }
         }
         .group-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(10rem, 3fr));
             .person-card {
-                width: auto;
+                margin: 5em 0;
                 h1 {
                     font-size: 2em;
                     margin: 0 auto;
@@ -231,6 +268,7 @@ html, body {
     background: #232323;
     height: auto;
     position: relative;
+    display: flex;
     .main-elements {
         text-align: center;
         margin: 0 1em;
@@ -429,5 +467,4 @@ html, body {
             }
         }
     }
-
 }

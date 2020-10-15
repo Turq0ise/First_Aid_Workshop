@@ -9,18 +9,32 @@
 </head>
 <body>
 
-    <ul class="nav-bar">
-        <li>
-            <a href="#home-page">Home</a>
-        </li>
-        <li>
-            <a href="#join-page">Join Now</a>
-        </li>
-        <li>
-            <a href="#about-page">About</a>
-        </li>
-    </ul>
-
+    <div class="nav-bar">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="nav-items">
+            <div class="nav-item">
+                <a href="#home-page">Home</a>
+                <label for="toggle-two"><img src="/Images/Arrow Down White.svg" alt="Scroll Down" class="small-arrow-down"></label>
+                <input type="checkbox" id="toggle-two"/>
+                <div class="nav-items-two">
+                    <a href="#join-page">Join</a>
+                    <a href="#about-page">About</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="Proposal Page/index.html#proposal-home-page">Proposal</a>
+                <label for="toggle-three"><img src="Images/Arrow Down White.svg" alt="Scroll Down" class="small-arrow-down"></label>
+                <input type="checkbox" id="toggle-three"/><div class="nav-items-three">
+                    <a href="/Proposal Page/index.html#proposal-importance-page">Importance</a>
+                    <a href="/Proposal Page/index.html#proposal-people-page">The People</a>
+                    <a href="/Proposal Page/index.html#proposal-learnings-page">Learnings</a>
+                    <a href="/Proposal Page/index.html#proposal-objectives-page">Objectives</a>
+                    <a href="/Outline Page/index.html#outline-main-page">Outline</a>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="section-one" id="home-page">
         <section class="main-elements">
@@ -55,7 +69,7 @@
         <div class="main-elements">
             <h1><span>About</span> Us</h1>
             <h2>We are the <span>Group 4</span> from C-9AM-2.</h2>
-            <div class="group-cards">
+            <main class="group-cards">
                 <div class="person-card" id="luigi">
                     <img src="Images/Profile Pictures/Luigi.jpg" alt="">
                     <h1>Leader</h1>
@@ -86,7 +100,7 @@
                     <h1>Scribe</h1>
                     <p><span>Stephen </span>Jimenez</p>
                 </div>
-            </div>
+            </main>
         </div>
     </section>
 
